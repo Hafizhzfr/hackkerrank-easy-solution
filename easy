@@ -1,0 +1,84 @@
+THANKS FOR VISITING! HOPE IT HELPS        
+        
+        #TUPLES
+n_total = int(input())
+n_element = map(int, input().split())
+t = tuple(n_element)
+print(hash(t))
+
+    #sWAP cASE
+def swap_case(s):
+    return s.swapcase()
+
+s = input()
+result = swap_case(s)
+print(result)
+
+    #WHATS YOUR NAME
+def print_full_name(first, last):
+    x = print('Hello' + ' ' +  str(first_name) + " " + str(last_name) + '!' + ' ' + 'You just delved into python.')
+    return x
+
+first_name = input()
+last_name = input()
+print_full_name(first_name, last_name)
+
+    #MUTATIONS
+def mutate_string(s, i, c):
+    s = s[:i] + c + s[i+1:]
+    return s
+
+s = input()
+i, c = input().split()
+s_new = mutate_string(s, int(i), c)
+print(s_new)
+
+    #String Validators
+    s = input()
+print(any(ele.isalnum() for ele in s))
+print(any(ele.isalpha() for ele in s))
+print(any(ele.isdigit() for ele in s))
+print(any(ele.islower() for ele in s))
+print(any(ele.isupper() for ele in s))
+
+    #ELIF FUNCTION
+n = int(input('')) 
+
+if n %2!=0:
+    print('Weird')
+elif n%2==0 and n in range(2, 5):
+    print('Not Weird')
+elif n%2==0 and n in range(6, 20):
+    print('Weird')
+elif n%2==0 and n>20:
+    print('Not Weird')
+else:
+    False
+   
+    #ARITHMETIC OPERATION
+
+a = int(input(''))
+b = int(input(''))
+
+print(a+b)
+print(a-b)
+print(a*b)
+
+    #DIVISION
+a = int(input(''))
+b = int(input(''))
+
+print(a//b)
+print(a/b)
+
+    #LOOPS
+n = int(input())
+if n >= 0 and n <= 20:
+    for i in range (0, n):
+        if i == n: break
+        print(i**2)
+else:
+    pass
+
+
+
